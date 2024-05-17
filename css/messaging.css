@@ -1,0 +1,106 @@
+#message{
+    display: flex;
+    width: 100%;
+    height: 70px;
+    cursor: pointer;
+    justify-content: space-between;
+    padding: 10px;
+    background: white;
+    margin-bottom: 4px;
+    color: rgba(0, 0, 0, 0.767);
+    align-items: center;
+    border-radius: 10px;
+    gap: 2%;
+    user-select: none;
+}
+
+#message.unread{
+    background:rgba(240, 240, 240, 0.9);
+    font-weight: bold;
+    color: rgba(0, 0, 0);
+}
+
+#message:active, #message:hover{
+    background:rgba(240, 240, 240, 0.9);
+}
+
+#userPics{
+    user-select: none;
+    border-radius: 100px;
+    width: 50px;
+    height: 50px;
+}
+
+#profilePics{
+    background: rgba(255, 255, 255, 0);
+    display: flex;
+    place-content: center;
+    align-items: center;
+    object-fit:cover;
+    padding: 2px;
+    border-radius: 100px;
+}
+
+.story{
+    border: 2px solid #007bff;
+}
+
+.userInfo{
+    display: grid;
+    width: 100%;
+    align-items: center;
+}
+
+.upper{
+    display: flex;
+    user-select: none;
+    justify-content: space-between;
+    font-weight: bolder;
+    font-size: 14px;
+    align-content: center;
+}
+
+#onlineStatus{
+    color: rgb(50, 255, 0);
+}
+
+#userName{
+    font-weight: bold;
+    color: black;
+    margin-bottom: 4px;
+    user-select: text;
+}
+
+#userRelation{
+    color: #007bff;
+}
+
+.messageInfo{
+    user-select: none;
+    transition: all ease 50ms;
+    padding-top: 1%;
+    display: flex;
+    font-size: small;
+    justify-content: space-between;
+}
+
+#recieveAnimate{
+    z-index: 999999;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    animation-timing-function: ease-in-out;
+    animation-name: comingIn;
+    animation-duration: 1s;
+    animation-iteration-count:linear;
+    animation-direction: normal;
+}
+
+@keyframes comingIn {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}

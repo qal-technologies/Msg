@@ -1,0 +1,59 @@
+
+.sentAnimate{
+    animation-timing-function: ease-in-out;
+    animation-name: sent;
+    animation-duration: 0.2s;
+    animation-iteration-count:linear;
+    animation-direction: normal;
+}
+
+@keyframes sent {
+    0%{
+        transform: translateY(1%) translateX(0%);
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-50%) translateX(100%);
+        opacity: 0;
+    }
+}
+
+.messageSent{
+    animation-timing-function: ease-in-out;
+    animation-name: msgSent;
+    animation-duration: 0.2s;
+    animation-iteration-count:linear;
+    animation-direction: normal;
+}
+@keyframes msgSent {
+    0%{
+        transform: translateY(10%) translateX(50%);
+        scale: 80%;
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0%) translateX(0%);
+        scale: 100%;
+        opacity: 1;
+    }
+}
+
+.messageRecieved{
+    animation-timing-function: ease-in-out;
+    animation-name: msgRecieved;
+    animation-duration: 0.2s;
+    animation-iteration-count:linear;
+    animation-direction: normal;
+}
+@keyframes msgRecieved {
+    0%{
+        transform: translateY(10%) translateX(-30%);
+        scale: 50%;
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(-0%) translateX(-0%);
+        scale: 100%;
+        opacity: 1;
+    }
+}

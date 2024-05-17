@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    transition: all ease-in-out 500ms;
+}
+
+body, html{
+    scroll-behavior: smooth;  
+}
+
+body{
+    background-position: 100%;
+    background-repeat: no-repeat;
+    background: linear-gradient(to top, #007bff9a 40%, rgb(240, 240, 240) 60%);
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center; 
+}
+
+body *{
+    transition: all ease-in-out 500ms;
+}
+
+.section{
+    display: grid;
+    margin-bottom:15% ;
+}
+
+.logo{
+    display: flex;
+    width: 200px;
+    height: 200px;
+    padding-top: 60px;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.svg{
+    width: 200px;
+    height: 200px;
+    scale: 150%;
+    align-items: center;
+    justify-items: center;
+    padding-left: 35%;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    z-index: 99999999;
+    background: white;
+    border-radius: 15px;
+    display: grid;
+    gap: 3%;
+    width: 100%;
+    padding: 35px;
+    box-shadow: 0px 0px 20px #007bff40;
+    user-select: none;
+}
+
+section, form *{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+input{
+    user-select: text;
+    padding: 4px;
+    border: none;
+    outline: none;
+    margin-bottom: 5px;
+    border-bottom: 2.3px solid #007bff50;
+    transition: all ease 300ms;
+}
+input::placeholder{
+    letter-spacing: 0.6px;
+    color: rgba(182, 182, 182, 0.863);
+}
+
+input:focus{
+    border-bottom: 2.3px solid #007bff;
+}
+
+#warning1, #warning2, #notMatch, #notCode{
+    text-align: center;
+    color: red;
+    font-size: smaller;
+    letter-spacing: 0.2px;
+}
+
+form button{
+    margin: 10px;
+    border: none;
+    background: #007bff;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: bolder;
+    font-size: large;
+    cursor: pointer;
+    color: white;
+}
+
+.down{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: small;
+    user-select: none;
+    color: #007bffa8;
+}
+
+.down p{
+    color: black;
+}
+
+.down a:hover, .down a:active{
+    text-decoration: underline;
+}
+
+a, a:active, a:visited{
+    color: #0075f1;
+}
+
+footer{
+    bottom: 0;
+    display: grid;
+    user-select: none;
+    padding: 4%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: fixed;
+    color: #007bffab;
+    font-size: small;
+    text-align: center;
+}
+
+.info{
+    display: flex;
+    gap: 10%;
+}
+
+.info div{
+    display: grid;
+}
+

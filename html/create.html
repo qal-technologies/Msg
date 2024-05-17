@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Developer" content="Paschal Ngaoka">
+    <meta name="Publisher" content="PasQal Intel">
+
+    <!-- CSS Styling... -->
+    <link rel="stylesheet" href="../css/create.css">
+    <link rel="stylesheet" href="../css/input.css">
+
+    <title>Msg | Create</title>
+</head>
+
+<body>
+     <section class="section">
+         
+         <div class="logo">
+             <svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 150 150" style="user-select: none; user-zoom: fixed;" class="svg">
+                 <defs>
+                     <filter id="drop-shadow" x="-20%" y="-20%" width="145%" height="145%">
+                       <feGaussianBlur in="SourceAlpha" stdDeviation="2" result="blur" />
+                       <feOffset in="blur" dx="5" dy="5" result="offsetBlur" />
+                       <feFlood flood-color="rgba(0,0,0,0.1)" result="color" />
+                       <feComposite in="color" in2="offsetBlur" operator="in" result="shadow" />
+                       <feComposite in="SourceGraphic" in2="shadow" operator="over" />
+                     </filter>
+                   </defs>
+                 <rect x="10" y="18" width="80" height="40" rx="16" ry="16" fill="#007bff" filter="url(#drop-shadow)"/>
+        
+                 <polygon points="60,58 50,70 40,58" fill="#007bff"filter="url(#drop-shadow)" />
+         
+                 <text x="34%" y="20%" text-anchor="middle" dominant-baseline="middle" fill="white" font-size="60" font-weight="bolder" font-family="serif">
+                   ...
+                 </text>
+               </svg>
+         </div> 
+         
+         
+             <main>
+         <form method="post" target="_self">
+
+             <input type="email" name="email" id="email" placeholder="Email or Phone number" >
+             <input type="password" name="password" id="password" placeholder="Create password..." maxlength="10">
+             <p id="notMatch"></p>
+             <input type="password" name="password2" id="password2" placeholder="confirm password..." maxlength="10">
+             <button type="submit" id="create">Sign Up</button>
+
+             <span class="down">
+                 <p>Already have an account?</p>
+                 <a href="./login.html">Login</a>
+             </span>
+         </form>
+             </main>
+     </section>
+
+
+    <footer>
+        <p style="font-weight: bolder;">
+            PasQal Intel &copy; 2023
+        </p>
+    </footer>
+</body>
+
+<script src="../js/create.js"></script>
+</html>

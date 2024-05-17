@@ -1,0 +1,71 @@
+header, footer{
+    display: flex;
+    align-items: center;
+    place-content: center;
+    justify-content: space-between;
+    user-select: none;
+    height: 60px;
+    width: 100%;
+    padding: 15px;
+    position: sticky;
+    backdrop-filter: blur(6px);
+    background:rgba(240, 240, 240, 0.923);
+}
+
+header{
+    border-end-end-radius: 15px;
+    border-end-start-radius: 15px;
+    top: 0;
+    box-shadow: 0px -2px 6px rgba(128, 128, 128, 0.671);
+}
+
+footer{
+    display: flex;
+    position: fixed;
+    border-start-end-radius: 15px;
+    border-start-start-radius: 15px;
+    bottom: 0;
+    z-index: 9999;
+    padding-bottom: 6px;
+    padding-inline: 10%;
+    font-family: sans-serif;
+    box-shadow: 0px -0px 6px rgba(128, 128, 128, 0.671);
+}
+
+footer *{
+    transition: all ease 100ms;
+    padding-bottom: 2px;
+    display: flex;
+    border-bottom: 3px solid #007bff00;
+    place-content: center;
+    width: 50px;
+    outline: none;
+}
+
+footer div .svg{
+    color: #007bff;
+    width: 25px;
+    height: 25px;
+    user-select: none;
+}
+
+#logo {
+    justify-content: center;
+    align-items: center;
+}
+
+.right {
+    display: flex;
+    padding-top: 10px;
+    justify-content: space-between;
+}
+
+footer .svg{
+    width:20px;
+    height:20px;
+}
+
+.active{
+    border-bottom: 3px solid #007bff;
+}
+

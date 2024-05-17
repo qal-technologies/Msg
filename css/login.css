@@ -1,0 +1,9 @@
+.down{
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+}
+
+.change{
+    font-size: medium;
+}
